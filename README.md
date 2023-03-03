@@ -1,14 +1,8 @@
 # K-meansClustering
-Đầu vào: Dữ liệu X và số lượng cluster cần tìm K
+K-means is the most popular method for clustering, which is partition-based.
 
-Đầu ra: Các center M và label vector cho từng điểm dữ liệu Y
+Data representation: D = {x1, x2, …, xr}, each xi is a vector in the n-dimensional Euclidean space.
 
-Chọn K điểm bất kỳ làm các center ban đầu.
-
-Phân mỗi điểm dữ liệu vào cluster có center gần nó nhất.
-
-Nếu việc gán dữ liệu vào từng cluster ở bước 2 không thay đổi so với vòng lặp trước nó thì ta dừng thuật toán.
-
-Cập nhật center cho từng cluster bằng cách lấy trung bình cộng của tất các các điểm dữ liệu đã được gán vào cluster đó sau bước 2.
-
-Quay lại bước 2.
+K-means partitions D into K clusters:
+Each cluster has a central point which is called centroid.
+K is a pre-specified constant.
